@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="listeLangues">
+        <item>Français</item>
+        <item>English</item>
+    </array>
+
+    <array name="paraNotifications">
+        <item>Off</item>
+        <item>Des mes amis</item>
+        <item>De tout le monde</item>
+    </array>
+</resources>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+        <!-- Header photos -->
+        <RelativeLayout
+            android:id="@+id/profile_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/profile_pic"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="fitXY"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/profile_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12pt"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/profile_pic"/>
+
+            <TextView
+                android:id="@+id/profile_titre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="8pt"
+                android:textColor="@color/white"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/profile_name"/>
+
+            <TextView
+                android:id="@+id/profile_ambiance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="8pt"
+                android:textColor="@color/white"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/profile_titre"/>
+
+        </RelativeLayout>
+
+        <!-- Amis en commun : HorizontalGridView -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/profile_text_amis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="10pt"
+                android:text="Amis en commun" />
+
+            <android.support.v17.leanback.widget.HorizontalGridView
+                android:id="@+id/profile_amis_list"
+                android:layout_width="wrap_content"
+                android:layout_height="110dp"/>
+
+        </RelativeLayout>
+
+        <!-- Succes récents : HorizontalGridView -->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/profile_succes_titre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="10pt"
+                android:text="Derniers succès" />
+
+            <Button
+                android:id="@+id/profile_succes_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:padding="5dp"
+                android:layout_alignTop="@id/profile_succes_titre"
+                android:layout_alignBottom="@id/profile_succes_titre"
+                android:layout_alignParentEnd="true"
+                android:text="Tout voir"/>
+
+            <android.support.v17.leanback.widget.HorizontalGridView
+                android:id="@+id/profile_succes_list"
+                android:layout_width="wrap_content"
+                android:layout_height="110dp"
+                android:layout_below="@id/profile_succes_titre"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/profile_demandes_titre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="10pt"
+            android:text="Demandes en attente" />
+
+        <ListView
+            android:id="@+id/profile_demandes_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+</ScrollView>

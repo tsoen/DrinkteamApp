@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:key="main_screen">
+
+    <PreferenceCategory android:title="PARAMETRES">
+
+        <ListPreference
+            android:title="Langue"
+            android:key="languePref"
+            android:dialogTitle="Langue"
+            android:entries="@array/listeLangues"
+            android:entryValues="@array/listeLangues"
+            android:defaultValue="1" />
+
+        <SwitchPreference
+            android:key="effetsSonoresPref"
+            android:title="Effets sonores"
+            android:defaultValue="true"/>
+
+        <SwitchPreference
+            android:key="musiquePref"
+            android:title="Musique"
+            android:defaultValue="true"/>
+
+        <SwitchPreference
+            android:key="vibrationsPref"
+            android:title="Vibrations"
+            android:defaultValue="true"/>
+
+        <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+            android:title="Notifications"
+            android:key="notifs_screen">
+
+            <PreferenceCategory android:title="NOTIFICATIONS">
+
+                <ListPreference
+                    android:title="Jean Martin aime votre photo"
+                    android:key="Notif_LikePref"
+                    android:dialogTitle="J'aime"
+                    android:entries="@array/NotifPref3"
+                    android:entryValues="@array/NotifPrefValue"
+                    android:defaultValue="2" />
+
+                <ListPreference
+
+                    android:title="Jean Martin a écrit :  '' J'adore cette photo ! '' "
+                    android:key="Notif_CommPref"
+                    android:dialogTitle="Commentaires"
+                    android:entries="@array/NotifPref3"
+                    android:entryValues="@array/NotifPrefValue"
+                    android:defaultValue="2" />
+
+                <ListPreference
+                    android:title="Jean Martin souhaiterait vous ajouter en ami"
+                    android:key="Notif_DemandeAmiPref"
+                    android:dialogTitle="Demande en ami"
+                    android:entries="@array/NotifPref2"
+                    android:entryValues="@array/NotifPrefValue"
+                    android:defaultValue="2" />
+
+                <ListPreference
+                    android:title="Jean Martin a accepté votre demande en ami"
+                    android:key="Notif_NouvelAmiPref"
+                    android:dialogTitle="Demande d'ami acceptée"
+                    android:entries="@array/NotifPref2"
+                    android:entryValues="@array/NotifPrefValue"
+                    android:defaultValue="2" />
+
+                <ListPreference
+                    android:title="Jean Martin a vous a envoyé un message"
+                    android:key="Notif_MessagePref"
+                    android:dialogTitle="Messages sur le chat"
+                    android:entries="@array/NotifPref3"
+                    android:entryValues="@array/NotifPrefValue"
+                    android:defaultValue="2" />
+
+                <ListPreference
+                    android:title="Votre succès a été validé !"
+                    android:key="Notif_SuccesValidéPref"
+                    android:dialogTitle="Succès validé"
+                    android:entries="@array/NotifPref2"
+                    android:entryValues="@array/NotifPrefValue"
+                    android:defaultValue="2" />
+
+                <ListPreference
+                    android:title="Jean Martin vous demande d'évaluer son succès"
+                    android:key="Notif_DemandeValidationPref"
+                    android:dialogTitle="Demande de validation d'un succès"
+                    android:entries="@array/NotifPref3"
+                    android:entryValues="@array/NotifPrefValue"
+                    android:defaultValue="2" />
+
+                <ListPreference
+                    android:title="Jean Martin vous a invité à un évènement"
+                    android:key="Notif_InvitationEventPref"
+                    android:dialogTitle="Invitation à un évènement"
+                    android:entries="@array/NotifPref3"
+                    android:entryValues="@array/NotifPrefValue"
+                    android:defaultValue="2"/>
+
+            </PreferenceCategory>
+
+        </PreferenceScreen>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="COMPTE">
+        <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+            android:title="Modifier le profil"
+            android:key="profile_screen">
+
+            <Preference
+                android:title="Photo de votre profil"
+                android:key="profilPic" />
+
+            <Preference
+                android:title="Photo de couverture"
+                android:key="backPic" />
+
+            <EditTextPreference
+                android:title="Nom"
+                android:hint="Indiquez un nom"
+                android:key="nom_user" />
+
+            <ListPreference
+                android:title="Titre"
+                android:key="titre_user"
+                android:dialogTitle="Titres"
+                android:entries="@array/NotifPref3"
+                android:entryValues="@array/NotifPrefValue"
+                android:defaultValue="0"/>
+
+            <EditTextPreference
+                android:title="Ville"
+                android:key="ville_user"
+                android:hint="Indiquez votre lieu de résidence"/>
+
+            <ListPreference
+                android:title="Pays"
+                android:key="pays_user"
+                android:dialogTitle="Pays"
+                android:entries="@array/countryName"
+                android:entryValues="@array/countryName" />
+
+            <!--- Ignorer erreur -->
+            <drinkteam.vue.Preferences_Date
+                android:title="Votre date de naissance"
+                android:key="naissance_user" />
+
+            <ListPreference
+                android:title="Genre"
+                android:key="genre_user"
+                android:dialogTitle="Genre"
+                android:entries="@array/genre"
+                android:entryValues="@array/genre_values"
+                android:defaultValue="0" />
+
+            <EditTextPreference
+                android:title="Message d'ambiance"
+                android:hint="Exprimez-vous !"
+                android:key="status_user" />
+
+        </PreferenceScreen>
+
+
+    </PreferenceCategory>
+    <PreferenceCategory android:title="AUTRE">
+
+        <Preference
+            android:title="Déconnexion"
+            android:key="deconnexion"/>
+
+    </PreferenceCategory>
+</PreferenceScreen>

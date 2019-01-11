@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="app_name">DrinkTeam</string>
+
+    <string name="facebook_app_id">1494807173896455</string>
+    <string name="fb_login_protocol_scheme">fb1494807173896455</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="Accueil">Accueil</string>
+    <string name="Mes_succes">Mes succès</string>
+    <string name="Mes_amis">Mes amis</string>
+    <string name="Les_recettes">Les recettes !</string>
+    <string name="Idées_jeux">Nos idées jeux</string>
+    <string name="Trouver_bar">Trouver un bar</string>
+    <string name="News">News</string>
+    <string name="Evènements">Evènements</string>
+    <string name="Paramètres">Paramètres</string>
+    <string name="AboutUs">A propos de nous</string>
+
+    <string-array name="items">
+        <item>@string/Accueil</item>
+        <item>@string/Mes_succes</item>
+        <item>@string/Mes_amis</item>
+        <item>@string/Les_recettes</item>
+        <item>@string/Idées_jeux</item>
+        <item>@string/Trouver_bar</item>
+        <item>@string/News</item>
+        <item>@string/Evènements</item>
+        <item>@string/Paramètres</item>
+        <item>@string/AboutUs</item>
+    </string-array>
+
+    <string name="ouverture">Ouverture</string>
+    <string name="fermeture">Fermeture</string>
+    <string name="titre_apres_ouverture">Catégories</string>
+
+    <string-array name="NotifPref3">
+        <item>Off</item>
+        <item>De mes amis</item>
+        <item>Toujours</item>
+    </string-array>
+
+    <string-array name="NotifPrefValue">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="NotifPref2">
+        <item>Off</item>
+        <item>Toujours</item>
+    </string-array>
+
+    <string name="takePic">Prendre une photo</string>
+    <string name="fromAlbum">Choisir dans vos albums</string>
+
+    <string-array name="genre">
+        <item>(Facultatif)</item>
+        <item>Homme</item>
+        <item>Femme</item>
+        <item>Autre</item>
+    </string-array>
+
+    <string-array name="genre_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/accueil_profile_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="40dp"
+        android:paddingEnd="0dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp">
+
+        <ImageView
+            android:id="@+id/accueil_profile_pic"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="30dp"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:id="@+id/accueil_profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12pt"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_toEndOf="@+id/accueil_profile_pic"/>
+
+        <TextView
+            android:id="@+id/accueil_profile_titre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="8pt"
+            android:textColor="@color/white"
+            android:layout_below="@+id/accueil_profile_name"
+            android:layout_alignStart="@+id/accueil_profile_name"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/accueil_succes_titre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textSize="10pt"
+            android:text="Derniers succès" />
+
+        <Button
+            android:id="@+id/accueil_succes_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_alignTop="@id/accueil_succes_titre"
+            android:layout_alignBottom="@id/accueil_succes_titre"
+            android:layout_alignParentEnd="true"
+            android:padding="0dp"
+            android:textSize="6pt"
+            android:text="Tout voir"/>
+
+        <android.support.v17.leanback.widget.HorizontalGridView
+            android:id="@+id/accueil_succes_list"
+            android:layout_width="wrap_content"
+            android:layout_height="110dp"
+            android:layout_below="@id/accueil_succes_titre"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingStart="10dp"
+        android:paddingRight="10dp"
+        android:paddingEnd="10dp">
+
+        <TextView
+            android:id="@+id/accueil_cocktail_titre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10pt"
+            android:text="Cocktail de la semaine" />
+
+        <ImageView
+            android:id="@+id/accueil_cocktail_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/accueil_cocktail_titre"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/accueil_cocktail_titre"
+            android:layout_toEndOf="@+id/accueil_cocktail_logo">
+
+            <TextView
+                android:id="@+id/weekly_cocktail_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textSize="10pt"/>
+
+            <Button
+                android:id="@+id/cocktail_fiche_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="10pt"
+                android:textSize="6pt"
+                android:text="Voir la fiche complète"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/weekly_cocktail_name"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
